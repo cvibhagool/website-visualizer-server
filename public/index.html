@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Website Visualizer</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div id="main">
+      <div class="logo"><a href='http://benv.io' style = "color:black">benv.io</a></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 centered">
+            <h1>Visualize a Website</h1>
+            <div class="form-group">
+              <form> 
+                <input type="url" id = "url-value" class="subscribe-input" placeholder="Enter a base URL..." required>
+                <button class='btn btn-conf btn-green submit'>Crawl URL</button>
+              </form>
+              <div class="alert alert-info info">
+                <strong>Chill!</strong> Your URL is being crawled, and sent back....
+              </div>
+              <div class="alert alert-error failure" style = "display:none;">
+                <strong>Chill!</strong> Your URL is being crawled, and sent back....
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

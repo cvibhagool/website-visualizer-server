@@ -1,0 +1,172 @@
+/* Import fonts */
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: normal;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2");
+}
+
+/** Bold */ 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: bold;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
+}
+
+* { 
+	margin: 0;
+	padding: 0px;
+    font-family: 'San Francisco', 'Lato', sans-serif;
+} 
+
+body { 
+	background: #fff; 
+	margin: 0; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'San Francisco', 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.centered {text-align: center}
+.form-group {margin-top: 50px;}
+
+.nopadding {
+	padding: 0px !important;
+	margin: 0px;
+}
+
+
+/* FORM CONFIGURATION */
+input {
+	font-size: 16px;
+	min-height: 40px;
+	border-radius: 25px;
+	line-height: 20px;
+	padding: 15px 30px 16px;
+	border: 1px solid #b9b9af;
+	margin-bottom: 10px;
+	opacity: 0.9;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+  color: black;
+  outline:none;
+}
+
+.subscribe-input {
+	float: left;
+	width: 65%;
+	text-align: left;
+	margin-right: 2px;
+}
+
+@media screen and (max-width: 767px) {
+	.subscribe-input {
+		width: 100%;
+	}
+}
+
+/*Buttons Configuration */
+.btn-conf {
+	border-radius: 50px;
+	margin-right: 15px;
+	font-size: 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 18px 28px 17px 28px;
+	}
+
+.btn-green {
+	background: #03C9A9;
+	color: white
+}
+
+/* HEADER SECTION */
+#main {
+	padding-top: 40px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 700px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#main .logo {
+	top: 30px;
+	left: 45px;
+	font-size: 18px;
+	font-weight: 900;
+	position:absolute; 
+}
+
+#main h1 {
+	font-weight: 500;
+	font-size: 40px;
+}
+
+#main h2 {
+  font-weight: 250;
+  font-size: 20px;
+}
+
+svg {
+  background:#fafafa;
+  display:block;
+  border:1px solid grey;
+  margin:auto;
+  margin-bottom:10px;
+}
+
+.node circle{
+  stroke: #fff;
+  stroke-width: 2.0px;
+}
+
+.node text {
+    font: bold 12px sans-serif;
+    fill: darkred;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+.node:not(:hover) .nodetext {
+  display: none;
+}
+
+.alert{
+  margin-top: 20px;
+}
