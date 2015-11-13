@@ -58,9 +58,9 @@ var updateGraph = function(mapData){
   var svg = d3.select("svg");
 
   var force = d3.layout.force()
-      .gravity(0.05)
+      .gravity(0.2)
       .distance(50)
-      .size([width/2, height/2]);
+      .size([width, height]);
 
   var edges = [];
     data.links.forEach(function(e) { 
