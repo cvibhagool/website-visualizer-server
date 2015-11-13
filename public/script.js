@@ -60,7 +60,7 @@ var updateGraph = function(mapData){
   var force = d3.layout.force()
       .gravity(0.05)
       .distance(50)
-      .size([width, height]);
+      .size([width/2, height/2]);
 
   var edges = [];
     data.links.forEach(function(e) { 
